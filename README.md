@@ -6,11 +6,11 @@ Esta é uma API que gerencia super-heróis, permitindo que os usuários consulte
 
 ## Como Executar o Projeto
 
-1-baixar o projeto
-2-executar "dotnet run" no terminal
+1. baixar o projeto
+2. executar "dotnet run" no terminal
 
--para acessar interface da aplicação pelo browser: http://localhost:XXXX/swagger/index.html
--troque o valor do "XXXX" pelo localhost inicializado (ex: http://localhost:5073/swagger/index.html)
+- para acessar interface da aplicação pelo browser: http://localhost:XXXX/swagger/index.html
+- troque o valor do "XXXX" pelo localhost inicializado (ex: http://localhost:5073/swagger/index.html)
 
 ### Pré-requisitos
 
