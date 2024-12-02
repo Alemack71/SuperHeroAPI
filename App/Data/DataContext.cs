@@ -4,17 +4,11 @@ namespace App.Data
 {
     public class DataContext : DbContext
     {
-        public DataContext(DbContextOptions<DataContext> options) : base(options)
+        public DataContext(DbContextOptions<DataContext> options) : base(options) //o base é o construtor/base da classe mãe
         {
 
         }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=superherodb;Trusted_Connection=true;TrustServerCertificate=true;");
-        }
-
-        public DbSet<SuperHero> SuperHeroes { get; set; }
+  
+        public DbSet<SuperHero> SuperHeroes { get; set; } //DbSet é a representação da tabela no banco de dados
     }
 }

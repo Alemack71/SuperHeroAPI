@@ -2,7 +2,7 @@ namespace App.Services.SuperHeroService
 {
     public class SuperHeroService : ISuperHeroService
     {
-        private readonly DataContext _context;
+         private readonly DataContext _context;
 
         public SuperHeroService(DataContext context)
         {

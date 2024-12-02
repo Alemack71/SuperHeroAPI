@@ -11,7 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ISuperHeroService, SuperHeroService>();
-builder.Services.AddDbContext<DataContext>();
+builder.Services.AddDbContext<DataContext>(option => option.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"))); //Esse comando adiciona e possibilita configurar o mesmo e o comando 'option' indica para a aplicação o db q estamos usando
 
 var app = builder.Build();
 
